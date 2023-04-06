@@ -1,5 +1,14 @@
-# Godot-3D-Template
+# Project 05 - FPS Maze
+Context and date
 
-Godot Template for 3D Games
+Description
 
-Includes Keyboard mappings and Global.gd
+## Implementation
+Which features you included
+
+## References
+
+## Future Development
+
+## Created by
+James Petersen
