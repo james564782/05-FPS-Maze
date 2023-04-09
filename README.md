@@ -9,8 +9,11 @@ Different Materials (including normal maps), Implemented light sources, created 
 ## References
 
 https://opengameart.org/content/torch [Flashlight Object]
+
 https://opengameart.org/content/gloomy-skybox [Skybox Texture]
+
 https://opengameart.org/content/grey-brick-wall-seamless-texture-with-normalmap [wall textures]
+
 https://opengameart.org/content/117-stone-wall-tilable-textures-in-8-themes [ground textures]
 
 ## Future Development
