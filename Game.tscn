@@ -1,3 +1,41 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://MazeGenerator/MazeGenerator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/Pause_Menu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=4]
 
 [node name="Game" type="Spatial"]
+transform = Transform( 1, -7.74388e-07, -0.000274717, 6.63544e-07, 1, -0.000404166, 0.000274717, 0.000404166, 1, 0, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 2, 0, 2 )
+
+[node name="Camera" parent="Player/Pivot" index="0"]
+transform = Transform( 1, -1.86596e-10, 0, -1.49214e-13, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="MazeGenerator" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.999998, 0.00167148, -0.00122401, -0.00167088, 0.999998, 0.000492819, 0.00122484, -0.000490774, 0.999999, 0, 0, 0 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, -0.75, 0.433013, -1.7053e-12, 10, 0 )
+light_energy = 0.05
+
+[node name="Object_Container" type="Spatial" parent="."]
+
+[node name="Effects" type="Spatial" parent="."]
+
+[node name="UI" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="HUD" parent="UI" instance=ExtResource( 4 )]
+margin_right = 984.0
+margin_bottom = 34.0
+
+[node name="Pause_Menu" parent="UI" instance=ExtResource( 3 )]
+visible = false
+margin_right = 984.0
+margin_bottom = 560.0
+
+[editable path="Player"]

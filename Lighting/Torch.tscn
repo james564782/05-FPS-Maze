@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/torch/torch/torch.obj" type="ArrayMesh" id=1]
+
+[node name="Torch" type="Spatial"]
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 0.005, 0, 0, 0, 0.00498637, -0.000368976, 0, 0.000368976, 0.00498637, 0, 0.0919459, 0 )
+mesh = ExtResource( 1 )
+
+[node name="SpotLight" type="SpotLight" parent="CSGMesh"]
+transform = Transform( 200, 0, 0, 0, 199.995, -1.46955, 0, 1.46955, 199.995, -20.0967, 6.13224, -129.418 )
+light_energy = 2.5
+spot_range = 9.206
+spot_attenuation = 1.27456
+spot_angle = 25.18
+spot_angle_attenuation = 2.92817
