@@ -4,7 +4,20 @@ Project for Game Technology, 4/8/2024
 Play using mouse and WASD keys. Hold click to shoot and hold shift while moving to sprint.
 
 ## Implementation
-Different Materials (including normal maps), Implemented light sources, created more elaborate maze/dungeon generation, player is able to sprint, player is able to sprint, multiple enemy types.
+
+
+
+Used multiple different materials (including normal maps)
+
+Implemented light sources (flashlights)
+
+Created more elaborate maze/dungeon generation
+
+Player is able to sprint and shoot
+
+Multiple enemy types
+
+Created environment with skybox and fog
 
 ## References
 
